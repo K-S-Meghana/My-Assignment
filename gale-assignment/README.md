@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+GALE Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+to build a responsive shopping cart page
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Features:
+1. List all products from the JSON(provided in `data.json`) in the cart page as per the design.
+2. User should be able to remove the product entirely from the Cart using Delete Button.
+3. User should be able to increment/decrement individual line item count in the cart and calculate the subtotal 
+appropriately.
+4. Gift item appears for which they are present in the JSON and only if the line item count is more than zero. 
+There will be only one gift(with count 1) per line item.
+5. Order summary should display the below
+a. subtotal -> Total of all the items price in the cart
+b. Total discount -> Applied only if the cart price increases more then the amount provided in the json 
+and the respective discount percentage is applied to it)
+c. Standard Shipping -> Applied based on the chosen "Pincode" from the "Delivery Availability" 
+Section.
+d. Checkout button will be enabled only if
+i. The user has at least one line item in the cart
+ii. The user has entered an valid pincode.
+e. Continue Shopping is just a link currently pointing to nothing.
+6. Delivery Availability section should display the data and tick marks based on the data available for the 
+pincodes in the provided JSON. For any invalid pincode, the user should not be able to click on checkout.
+7. The Discount Tag notification appears only if there is any discount provided in the JSON. In case there is no 
+discount provided, the notification should not be shown and the total discount will be always 0 in the Order 
+Summary Section.
+8. The header bar displays icon and links. These have no functionalities associated with them.
+9. The footer also provides links that have no functionalities.
+10. The cart data should be persisted in the browser so that the user lands on the same state when they reload 
+the page
