@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+.content-view {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+.sub-label-offer {
+  background-color: #937fdb;
+  color: #fff;
+  max-width: 80%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}

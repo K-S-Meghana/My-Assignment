@@ -1,0 +1,54 @@
+#shopping-list {
+    max-width: 90%;
+    margin: 10px auto;
+}
+.product-field {
+    max-width: 30%;
+}
+.prod-img {
+    width: 30%;
+    margin: 10px;
+    float: left;
+}
+.gift-view {
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 5px;
+}
+.cashback-view {
+    background-color: #0f0442;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 5px;
+    max-width: inherit;
+}
+.availability {
+    display: inline-block;
+    overflow: auto;
+    text-align: left;
+    max-width: inherit;
+}
+.order-delivery {
+    display: inline-block;
+    overflow: auto;
+    text-align: right;
+    padding: 10px;
+}
+.deliver-options {
+    display: flex;
+    max-width: inherit;
+    margin: 10px;
+    width: 80%;
+}
+.field-label {
+    float: left;
+    max-width: inherit;
+    padding-right: 5rem;
+
+}
+.shopping  {
+    text-align: right;
+    display: inline-block;
+    color: #0f0442;
+}

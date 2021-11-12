@@ -1,0 +1,17 @@
+
+.main-nav {
+    max-width: 60%;
+    display: contents;
+}
+.logo-label {
+    text-align: left;
+}
+.nav-sub-wrap {
+    border-right: 1px solid #fff;
+    padding-right: 10
+}
+.icon-style {
+    border-right: 1px solid #fff;
+    margin: 5px;
+    max-width: 50px;
+}

@@ -1,0 +1,10 @@
+.main-footbar-view .MuiPaper-root {
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+}
+.footer-wrap {
+    display: inline-block;
+    max-width: inherit;
+    padding: 20px
+  }
